@@ -1,10 +1,10 @@
-Indonesian Typo Correction with IndoBART
+# Indonesian Typo Correction with IndoBART
 
 Proyek ini adalah implementasi Automatic Spelling Correction (Koreksi Ejaan Otomatis) untuk Bahasa Indonesia. Model ini dilatih (fine-tuned) menggunakan arsitektur IndoBART v2 untuk memperbaiki kesalahan penulisan kata (typo) non-word error.
 
 Proyek ini dikembangkan sebagai bagian dari Tugas Akhir NLP.
 
-📋 Fitur Utama
+# 📋 Fitur Utama
 
 Fine-tuning IndoBART: Menggunakan model pre-trained indobenchmark/indobart-v2 (berbasis mBART) yang dilatih ulang dengan dataset spesifik.
 
@@ -18,7 +18,7 @@ Generate soal typo acak dari dataset untuk menguji performa model.
 
 Input manual dari pengguna.
 
-🧠 Model & Dataset
+# 🧠 Model & Dataset
 
 Arsitektur Model
 
@@ -36,7 +36,7 @@ Deskripsi: Dataset benchmark untuk koreksi kesalahan kata non-word dalam Bahasa 
 
 Ukuran: Terdiri dari 58,532 variasi kesalahan ketik yang dihasilkan dari 3,000 kata dasar populer.
 
-🛠️ Instalasi
+# 🛠️ Instalasi
 
 Pastikan Anda telah menginstal Python (disarankan versi 3.8 ke atas) dan memiliki GPU (CUDA) untuk performa training yang optimal.
 
@@ -53,7 +53,7 @@ pip install torch transformers pandas numpy scikit-learn datasets evaluate sacre
 
 (Disarankan menggunakan Virtual Environment)
 
-🚀 Cara Penggunaan
+# 🚀 Cara Penggunaan
 
 1. Training Model (train_model.py)
 
@@ -87,7 +87,7 @@ Cara Menjalankan:
 python run_model.py
 
 
-📂 Struktur Folder
+# 📂 Struktur Folder
 
 ├── dataset/
 │   └── saltik.json              # Dataset sumber
@@ -98,13 +98,13 @@ python run_model.py
 └── README.md                    # Dokumentasi proyek
 
 
-⚠️ Catatan Penting
+# ⚠️ Catatan Penting
 
 Ukuran Model: Folder indobart-correction-saltik berisi file pytorch_model.bin yang berukuran besar (>600MB). Jika Anda meng-clone repo ini, Anda mungkin perlu mengunduh modelnya secara terpisah atau melatih ulang sendiri jika folder tersebut tidak disertakan karena batas ukuran GitHub (kecuali menggunakan Git LFS).
 
 Karakteristik Model: Model ini dilatih pada level kata. Jika Anda memasukkan kalimat, script run_model.py akan memecah kalimat tersebut berdasarkan spasi dan memperbaiki setiap kata secara individual.
 
-🤝 Credits
+# 🤝 Credits
 
 Terima kasih kepada IndoBenchmark untuk pre-trained model IndoBART.
 
