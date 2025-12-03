@@ -125,4 +125,4 @@ python run_model.py
 
 - Terima kasih kepada pembuat dataset Saltik.
 
-Created by [Nama Anda]
+Created by Kelompok 1 NLP
